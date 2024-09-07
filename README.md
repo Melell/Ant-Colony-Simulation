@@ -4,9 +4,9 @@ This is an AI project I developed with a colleague of mine while at uni. It's a 
 
 Ants have limited vision and hearing, but they have extremely good odor sensing capabilities, so in order to navigate their environment they leave trails of chemical substances behind called pheromones for the rest of the colony to sense. Ants that are leaving the nest in search of food will leave "nest" (blue) pheromones behind, while ants carrying food will leave "food" (green) pheromones behind. In turn, each ant will go in the direction where they sense a stronger presence of the pheromone type they're interested in.
 
-(Explain path optimization)
+Pheromones will evaporate over time, and the intensity of the pheromones dropped decreases over time unless ants go over the nest or food source again. This means that if ants form long paths between the nest and food source, it will eventually be optimized to be as short as possible because shorter paths will have stronger pheromone intensities.
 
-(Explain placing of food sources and walls)
+In our demo, we implement all these concepts and allow the user to place the nest and food anywhere. We also give the ability to add/remove walls while the simulation is running, to force ants on different paths. For more details on how the demo was implemented please refer to the document attached to the release.
 
 This method of inter-agent communication is called "stigmergy", where each agent in a group modifies the environment in order to guide decision making of other agents. It hasn't been explored that much in videogames but it is an interesting topic.
 
@@ -31,6 +31,3 @@ NOTE: While these parameters are exposed for the user to play around, they've be
 - Pheromone Decision Time: The time interval between each decision that an ant takes of which direction to follow based on the pheromone concentration ahead
 - Ant FOV Radius: The radius of the ants' FOV
 - Pheromone Time: The time it takes for a pheromone dropped to completely evaporate
-
-## Implementation details
-(Add implementation details)
