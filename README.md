@@ -6,9 +6,11 @@ Ants have limited vision and hearing, but they have extremely good odor sensing 
 
 Pheromones will evaporate over time, and the intensity of the pheromones dropped decreases over time unless ants go over the nest or food source again. This means that if ants form long paths between the nest and food source, it will eventually be optimized to be as short as possible because shorter paths will have stronger pheromone intensities.
 
+<img src="imgs/AntSimulationSnippet.gif" alt="GIF showing the simulation with ants optimizing the path formed to between food and nest over time." width="480" height="270" />
+
 In our demo, we implement all these concepts and allow the user to place the nest and food anywhere. We also give the ability to add/remove walls while the simulation is running, to force ants on different paths. For more details on how the demo was implemented please refer to the document attached to the release.
 
-This method of inter-agent communication is called "stigmergy", where each agent in a group modifies the environment in order to guide decision making of other agents. It hasn't been explored that much in videogames but it is an interesting topic.
+This method of inter-agent communication is called "stigmergy", where each agent in a group modifies the environment in order to guide decision making of other agents. It is a very interesting idea that hasn't been explored that often in videogames.
 
 ## Camera controls (spherical camera)
   - Q/E Keys: Zoom out/zoom in
